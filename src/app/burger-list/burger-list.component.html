@@ -1,1 +1,11 @@
-<p>burger-list works!</p>
+<div class="burger-menu">
+    <div class="burger-details" [@slideInOut]>
+      <app-burger-details [burger]="selectedBurger"></app-burger-details>
+    </div>
+    <div class="burger-navigation">
+        <button *ngFor="let burger of burgers; let i = index" (click)="selectBurger(i)">
+            {{ burger.name }}
+          </button>
+    </div>
+  </div>
+  

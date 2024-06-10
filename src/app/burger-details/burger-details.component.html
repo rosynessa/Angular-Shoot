@@ -1,1 +1,13 @@
-<p>burger-details works!</p>
+<div class="burger-detail">
+    <img [src]="burger.image" alt="{{ burger.name }}">
+    <h2>{{ burger.name }}</h2>
+    <p>{{ burger.description }}</p>
+    <p>Price: ${{ burger.price }}</p>
+    <div class="nutrition">
+      <p>Fat: {{ burger.nutrition.fat }}</p>
+      <p>Saturates: {{ burger.nutrition.saturates }}</p>
+      <p>Sugars: {{ burger.nutrition.sugars }}</p>
+      <p>Salt: {{ burger.nutrition.salt }}</p>
+    </div>
+  </div>
+  

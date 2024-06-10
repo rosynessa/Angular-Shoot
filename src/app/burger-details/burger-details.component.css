@@ -1,0 +1,18 @@
+.burger-detail {
+    text-align: center;
+  }
+  
+  .burger-detail img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .nutrition {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nutrition p {
+    margin: 5px 0;
+  }
+  
