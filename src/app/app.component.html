@@ -74,26 +74,40 @@
               </pre></span>
           </div>
       </div>
-<main>
+
+      <div class="menu-container">
+      </div class="item1">
+        <h1>Classic Burger</h1>
+        <img src="assests/eiliv-aceron-5nvt9BrLaAc-unsplash.jpg" alt="burger">
+       <p class = 'description'>
+        our new classic burger healthy.
+       </p>
+       <div class="price">
+        <h3>KES 1,600</h3>
+       </div>
+
+<!--<main>
       <div class="product-display">
-        <div class="main-product">
-            <img src="assests/pixzolo-photography-3tL4vtrFqTQ-unsplash.jpg" alt="Classic Burger">
-            <h2>Classic Burger</h2>
+        <button (click)="prevProduct()" [disabled]="currentProductIndex ===0">Previous</button> 
+            <img [src]= "products[currentProductIndex].imgSrc" alt="product[currentProductIndex].name">
+            <h2>{{products[currentProductIndex].name}}</h2>
             <p class="description">
-                The classic burger is an all time BBQ favorite! This super easy homemade beef burger recipe shows you delicious patties, packed with onions and herbs for extra flavor, that are perfect for topping with cheese, lettuce and tomato, and sandwiching between floury buns.
-            </p>
+              {{product.[currentProductIndex].description}}</p>
+      
             <div class="nutritional-info">
-                <span>Fat: 26g</span>
-                <span>Saturates: 10g</span>
-                <span>Sugars: 18g</span>
-                <span>Salt: 1.8g</span>
+                <span>Fat: {{products[currentProductIndex].nutritionalInfo.fat}}</span>
+                <span>Saturates: {{products[currentProductIndex].nutritionalInfo.saturates}}</span>
+                <span>Sugars: {{products[currentProductionIndex].nutritionalInfo.sugars}}</span>
+                <span>Salt: {[{{products[currentProductionIndex].nutritionalInfo.salt}}]}</span>
             </div>
+
             <div class="price-add">
-                <span>KES 1,600</span>
+                <span>{{products[currentProductIndex].price}}</span>
                 <button>Add to Cart</button>
             </div>
         </div>
-        <div class="other-products">
+
+      <div class="other-products">
             <div class="product-card">
                 <img src="assests/mike-PxJ9zkM2wdA-unsplash.jpg" alt="Double Burger">
                 <h3>Double Burger</h3>
@@ -116,6 +130,11 @@
             </div>
         </div>
     </div>
-    </main>
 
-          
+  </div>
+  <div>
+  <button (click)="nextProduct()" [disabled] ="currentProductIndex === products.length-1">Next</button>  
+</div>
+    </main>-->
+
+   

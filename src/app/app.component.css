@@ -125,7 +125,29 @@ nav a {
   background-color: rgba(255, 255, 255, 0.7); 
 }
 
-main {
+.menu-container {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.menu-item {
+  flex: 0 0 100%; /* Each menu item takes up full width */
+  transition: transform 0.5s ease;
+}
+
+.arrow-container {
+  text-align: center;
+}
+
+.arrow-container button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/*main {
   display: flex;
   justify-content: center;
   padding: 40px;
@@ -212,4 +234,4 @@ main {
   font-size: 18px;
   color: #ff7f50;
   font-weight: bold;
-}
+}*/
